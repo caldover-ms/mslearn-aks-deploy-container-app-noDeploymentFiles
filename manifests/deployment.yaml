@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: workflow2
+  labels:
+    app: workflow2
+    kubernetes.azure.com/generator: devhub
+  namespace: sample-app-namespace-1730322675813
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: workflow2
+  template:
+    metadata:
+      labels:
+        app: workflow2
+    spec:
+      containers:
+        - name: workflow2
+          image: registry1730322735217.azurecr.io/image-workflow-1730322675809:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
