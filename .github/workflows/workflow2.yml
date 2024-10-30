@@ -39,8 +39,8 @@ on:
 
 env:
   ACR_RESOURCE_GROUP: ca-appsfirst1_group
-  AZURE_CONTAINER_REGISTRY: registry1730322735217
-  CONTAINER_NAME: image-workflow-1730322675809
+  AZURE_CONTAINER_REGISTRY: registry1730324774528
+  CONTAINER_NAME: image-workflow-1730324645942
   CLUSTER_RESOURCE_GROUP: ca-appsfirst1_group
   CLUSTER_NAME: ca-appsfirst1
   DEPLOYMENT_MANIFEST_PATH: |
@@ -48,7 +48,7 @@ env:
     manifests/service.yaml
   DOCKER_FILE: ./Dockerfile
   BUILD_CONTEXT_PATH: ./
-  NAMESPACE: sample-app-namespace-1730322675813
+  NAMESPACE: sample-app-namespace-1730324645947
 
 jobs:
   buildImage:
